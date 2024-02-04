@@ -1,0 +1,510 @@
+.App {
+  text-align: center;
+}
+
+.markdown a {
+  color: theme("colors.pink.300");
+}
+
+.markdown th {
+  text-align: start;
+  border: 1px solid theme("colors.slate.400");
+  padding: 0.5rem;
+}
+
+.markdown table {
+  border: 1px solid theme("colors.slate.400");
+  border-collapse: collapse;
+  border-radius: 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown table td {
+  border: 1px solid theme("colors.slate.400");
+  padding: 0.5rem;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  margin-left: 1rem;
+}
+
+.welcome-section {
+  overflow: hidden;
+  min-height: 100vh;
+}
+.welcome {
+  height: 100vh;
+  /* overflow: scroll; */
+}
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(rgb(248, 246, 246) , #fff); */
+  padding: 50px 55px 55px 55px !important;
+  min-height: 100vh;
+}
+.image-col .img-box img {
+  width: 40%;
+  height: auto;
+  display: block;
+}
+.image-col h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 25px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.image-col p {
+  text-align: center;
+  padding: 0pc 51px 15px 51px;
+  font-size: 22px;
+  margin: 0;
+  color: #fff;
+}
+.image-col {
+  background: #64b3e1;
+}
+
+.image-col .img-box {
+  margin: 15px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.role {
+  padding: 50px 100px !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.role h2 {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.role label {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1d2939;
+}
+.role label input {
+  margin-top: 0px;
+  border: none;
+  padding: 0px 0px 0px 42px;
+  width: 100%;
+  height: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid #98a2b3;
+  border-radius: 10px;
+  color: #000 !important;
+}
+
+.role label input::placeholder {
+  color: #98a2b3 !important;
+}
+.role input:focus {
+  outline: none;
+  border: 1.4px solid rgb(11, 16, 5);
+}
+
+.role button {
+  background: linear-gradient(#150432, #1f1b43);
+  width: 29%;
+  height: 44px;
+  margin-top: 15px;
+  padding: 4px 19px;
+  color: #fcfcfd;
+  background: #64b3e1;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+.login-head h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 30px;
+  letter-spacing: -0.02em;
+  color: #054970;
+}
+.login-head p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #054970;
+  padding-bottom: 69px;
+  margin: 0;
+}
+.student-button {
+  margin-right: 10px;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+button {
+  cursor: pointer;
+}
+
+.px-32 {
+  padding-right: 8rem; /* Adjust this value based on your design */
+  padding-left: 8rem; /* Adjust this value based on your design */
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-slate-700 {
+  background-color: #4a5568; /* Adjust this color based on your design */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.sidebar-section {
+  width: 20%;
+  height: 100%;
+  background: #64b3e1;
+  color: #fff;
+  position: fixed;
+  transition: 0.5s;
+}
+
+.list-sidebar li {
+  list-style: none;
+  padding: 4px 20px !important;
+}
+
+.list-sidebar li i {
+  color: #f5fbff;
+  display: flex;
+}
+
+.list-sidebar li span {
+  width: 230px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  border: none;
+
+  font-family: "circular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  margin-left: 10px;
+  color: #ffffff;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.list-sidebar a {
+  text-decoration: none;
+}
+.list-sidebar li p {
+  margin-bottom: 0;
+}
+
+.menu-header {
+  margin-left: 30px;
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-item {
+  margin: 5px 0;
+  cursor: pointer;
+  font-family: "Inter";
+  transition: background-color 0.3s ease;
+}
+
+.menu-item li.active {
+  background: #fff;
+}
+.menu-item li.active span {
+  color: #000;
+}
+
+.list-sidebar .active li i span,
+.list-sidebar .active li .filter-green {
+  color: #054970 !important;
+  filter: invert(92%) sepia(98%) saturate(1505%) hue-rotate(220deg)
+    brightness(118%) contrast(119%);
+}
+.list-sidebar .active li .nav-color {
+  color: rgb(60 60 122);
+}
+.main-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.main-logo p {
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.main-logo-open {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.main-logo-open p {
+  color: #ffffff;
+  background: #fff;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.main-logo::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+
+  width: 252px;
+  bottom: 31px;
+  left: 19px;
+  background-color: #f5fbff;
+}
+
+.main-logo img {
+  width: 76%;
+  padding-bottom: 25px;
+}
+.side-menu {
+  height: calc(100vh - 205px);
+  position: relative;
+  padding-bottom: 70px;
+  overflow-y: scroll;
+}
+
+.header-section {
+  background-color: #64b3e1;
+}
+.chat-main {
+  /* background-color: #86cbf8; */
+  background-color: #ffffff;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+    scrollbar-gutter: stable;
+    max-height: 20px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(74, 75, 77, 0.1);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--base);
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    max-height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 10px;
+    background-color: var(--base);
+    width: auto;
+  }
+}
+
+.chat-scroll {
+  overflow-y: scroll;
+}
+
+.new-chat {
+  margin: 0px 40px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  img {
+    width: 10%;
+  }
+}
+
+.certificate-button{
+  background-color: black;
+  color: white;
+}
+.chat-icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.new-chat-button {
+  margin-left: 14px;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+.text-input {
+  background-color: #fff;
+}
+/* Media query Section */
+
+@media only screen and (max-width: 1090px) {
+  .role {
+    padding: 0px 50px !important;
+  }
+}
+@media only screen and (max-width: 776px) {
+  .image-col .img-box img {
+    width: 100%;
+  }
+
+  .welcome {
+    height: auto;
+    overflow: inherit;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-col p {
+    text-align: center;
+    padding: 24px 0px 32px 0px;
+    color: #fff;
+  }
+}
+
+
+.home-conatiner {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.autn-conatiner {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #64b3e1;
+}
+
+.auth-form-container, .login-form, .register-form {
+  
+  margin-inline: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    padding: 3rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+  color: black;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #e4802e;
+  margin-top: 15px;
+}
+
+.link-btn {
+  background: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.register-btn {
+  background-color: green;
+}
+.ribben-logo {
+  height: 70px;
+  width: 70px;
+}
+
+.login-btn {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(7, 131, 7);
+  margin-top: 15px;
+}
