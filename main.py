@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 client = AsyncOpenAI(
-    api_key="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",
+    api_key="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",
 )
 student = "asst_fnszkgkq72eWS2O0SEP5SM0Y" #PMDOK_Guider
 student = "asst_VBonk4SScFovaS7KW8UOiVZU" #PMDOK_Quiz
