@@ -206,12 +206,32 @@ button {
   flex-direction: column;
 }
 
+#sidebar-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* #sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  border-right: 1px solid #ccc;
+  width: 250px;
+  padding: 20px;
+} */
+
 .sidebar-section {
-  width: 20%;
-  height: 100%;
+  /* Keep the existing styles */
+  /* Other styles... */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%; /* Set the width to 20% */
+  min-width: 200px; /* Set a minimum width if necessary */
+  height: 100vh; /* Set the height to cover the entire viewport */
   background: #64b3e1;
   color: #fff;
-  position: fixed;
   transition: 0.5s;
 }
 
@@ -334,10 +354,16 @@ button {
 
 .header-section {
   background-color: #64b3e1;
+  width: 100%;
+  margin: auto;
 }
+
 .chat-main {
+  display: flex;
   /* background-color: #86cbf8; */
   background-color: #ffffff;
+  /* margin-left: 20%;  */
+  width: 100%; /* Adjust the width accordingly */
 }
 
 .custom-scrollbar {

@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import ChatInput from "./ChatInput";
 import ChatMessage from "./ChatMessage";
@@ -13,8 +13,14 @@ import { postMessage } from "../services/api";
 import Sidebar from "./sidebar";
 
 const Chat = ({ selectedRole }) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [run, setRun] = useState(undefined);
-  const { threadId, messages,setMessages, setActionMessages, clearThread } = useThread(
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const { threadId, messages, setMessages, setActionMessages, clearThread } = useThread(
     run,
     setRun,
     selectedRole
@@ -41,16 +47,16 @@ const Chat = ({ selectedRole }) => {
         );
       }
     });
+
   return (
-    <div className=" h-screen chat-main flex">
-      <div style={{ width: "20%" }}>
-        <Sidebar onNewChat={clearThread} />
-      </div>
-      <div
-        className="container flex flex-col chat-section"
-        style={{ width: "80%" }}
-      >
-        <Header onNewChat={clearThread} />
+    <div className="h-screen chat-main flex">
+      {isSidebarOpen && (
+        <div style={{ width: "20%" }}>
+          <Sidebar onNewChat={clearThread} />
+        </div>
+      )}
+      <div className="container flex flex-col chat-section" style={{ flex: 1 }}>
+        <Header onNewChat={clearThread} toggleSidebar={toggleSidebar} />
         {run ? (
           <>
             <div className="flex flex-col-reverse grow chat-scroll custom-scrollbar">

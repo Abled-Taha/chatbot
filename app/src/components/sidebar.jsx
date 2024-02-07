@@ -18,10 +18,10 @@ const Sidebar = ({ onNewChat }) => {
   };
 
   return (
-    <div className="sidebar-section">
+    <div className="sidebar-section flex">
       <div className="list-sidebar">
         <div className="main-logo">
-          <h1 className="d-flex"><img style={{width:"58px", marginRight: "15px"}} src={Chat}/>Assistant</h1>
+          <h1 className="d-flex"><img style={{width:"1.5em", marginRight: "15px"}} src={Chat}/>Assistant</h1>
         </div>
         <div className="side-menu custom-scrollbar mt-5">
           <div className="new-chat d-flex">
